@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction au HTML pour Débutants</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: hwb(0 0% 96%);
+    }
+
+    header {
+      background-color: #ff7f50;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #ff7f50;
+    }
+
+    code {
+      background-color: #eee;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+    }
+
+    pre {
+      background-color: #eee;
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    .example {
+      background-color: #fafafa;
+      border-left: 4px solid #ff7f50;
+      padding: 0.5rem 1rem;
+      margin: 1rem 0;
+    }
+
+    .illustration {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    .illustration img {
+      max-width: 150px;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Introduction au HTML</h1>
+    <img src="/images/logo.png" alt="WebAcademy logo" class="logo">
+  </header>
+
+  <main>
+    <h2>Les éléments essentiels d'une page HTML</h2>
+
+    <div class="example">
+      <p><code>&lt;!DOCTYPE html&gt;</code> : indique au navigateur la version HTML.</p>
+      <div class="illustration">
+        <img src="https://cdn-icons-png.flaticon.com/512/3266/3266661.png" alt="Icone HTML">
+        <p>Comme un panneau indiquant "HTML5"</p>
+      </div>
+
+      <p><code>&lt;html lang="fr"&gt; ... &lt;/html&gt;</code> : englobe tout le contenu et indique la langue.</p>
+      <div class="illustration">
+        <img src="https://cdn-icons-png.flaticon.com/512/565/565547.png" alt="Icone racine">
+        <p>Racine de la page</p>
+      </div>
+
+      <p><code>&lt;head&gt; ... &lt;/head&gt;</code> : contient les informations pour le navigateur (non visibles).</p>
+      <div class="illustration">
+        <img src="https://cdn-icons-png.flaticon.com/512/2910/2910762.png" alt="Icone informations">
+        <p>Informations techniques</p>
+      </div>
+
+      <p><code>&lt;meta charset="UTF-8"&gt;</code> : définit l'encodage des caractères.</p>
+      <div class="illustration">
+        <img src="https://cdn-icons-png.flaticon.com/512/1239/1239676.png" alt="Icone texte">
+        <p>Caractères affichés correctement</p>
+      </div>
+
+      <p><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> : rend la page adaptée aux mobiles.</p>
+      <div class="illustration">
+        <img src="https://cdn-icons-png.flaticon.com/512/565/565492.png" alt="Icone mobile">
+        <p>Page adaptée à tous les écrans</p>
+      </div>
+
+      <p><code>&lt;title&gt; ... &lt;/title&gt;</code> : définit le titre visible dans l’onglet du navigateur.</p>
+      <div class="illustration">
+        <img src="https://cdn-icons-png.flaticon.com/512/1006/1006550.png" alt="Icone titre">
+        <p>Nom de la page dans l'onglet</p>
+      </div>
+
+      <p><code>&lt;body&gt; ... &lt;/body&gt;</code> : contient tout ce que l’utilisateur verra (texte, images, vidéos).</p>
+      <div class="illustration">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828843.png" alt="Icone page">
+        <p>Contenu visible de la page</p>
+      </div>
+    </div>
+
+    <h2>Exemple d’un paragraphe avec un lien</h2>
+    <pre><code>&lt;p&gt;Un paragraphe avec un lien vers 
+&lt;a href="https://www.webacademy.edu"&gt;WebAcademy&lt;/a&gt;.&lt;/p&gt;</code></pre>
+
+    <div class="example">
+      <p><strong>&lt;p&gt;</strong> → balise d’ouverture du paragraphe</p>
+      <p><strong>&lt;/p&gt;</strong> → balise de fermeture du paragraphe</p>
+      <p><strong>href</strong> → attribut indiquant l’adresse du lien</p>
+      <p>Le texte du paragraphe → contenu visible</p>
+      <p>L’ensemble → un paragraphe HTML contenant un lien cliquable</p>
+      <div class="illustration">
+        <img src="https://cdn-icons-png.flaticon.com/512/60/60781.png" alt="Icone lien">
+        <p>Cliquer sur le lien ouvre la page</p>
+      </div>
+    </div>
+
+    <h2>Résumé</h2>
+    <p>Ces éléments sont la base de toute page HTML. Toujours les inclure pour que votre page fonctionne correctement sur tous les navigateurs et appareils.</p>
+
+  </main>
+
+</body>
+</html>

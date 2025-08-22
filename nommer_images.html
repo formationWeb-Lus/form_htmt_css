@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 130 | Travailler avec les images</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://webacademy-cse.github.io/cse-ww-program/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://webacademy-cse.github.io/cse-ww-program/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="https://webacademy-cse.github.io/cse-ww-program/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/course.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/vs2015.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="page">
+      <h1>WDD 130<span id="coursetitle"> : Fondamentaux du Web</span></h1>
+      <img src="/images/logo.png" alt="Logo WebAcademy" class="logo">
+    </div>
+  </header>
+
+  <main class="page">
+    <nav>
+      <span><a href="../">Accueil</a></span>
+      <span class="active"><a href="../week01/">S1</a></span>
+      <span><a href="../week02/">S2</a></span>
+      <span><a href="../week03/">S3</a></span>
+      <span><a href="../week04/">S4</a></span>
+      <span><a href="../week05/">S5</a></span>
+      <span><a href="../week06/">S6</a></span>
+      <span><a href="../week07/">S7</a></span>
+    </nav>
+
+    <h2>Semaine 01 - Activité d’apprentissage : Travailler avec les images Web</h2>
+
+    <h3>Aperçu</h3>
+    <p>La plupart des sites Web contiennent non seulement du texte, mais aussi des images. Certains formats d’images sont mieux adaptés au web que d’autres.  
+      Cette activité introduit l’utilisation des images pour le web et explique comment les optimiser afin qu’elles utilisent moins de mémoire, réduisant ainsi le poids global de la page et le temps de téléchargement.
+    </p>
+
+    <h3>Préparation</h3>
+
+    <h4>Types d’images</h4>
+    <p>La vidéo suivante présente les types d’images les plus utilisés sur le web :</p>
+
+    
+
+    <p>Comme expliqué dans la vidéo, les types d’images les plus courants pour le web sont :</p>
+
+    <ul>
+      <li><strong>JPEG / JPG</strong> : Utilisé pour les photos et images complexes. Compression avec perte pour réduire fortement la taille du fichier.</li>
+      <li><strong>PNG</strong> : Utilisé pour les graphiques, logos et images nécessitant un fond transparent. Compression sans perte et support de la transparence alpha.</li>
+      <li><strong>GIF</strong> : Utilisé pour les petites animations et graphiques simples. Limité à 256 couleurs, mais prend en charge la transparence de base et les animations.</li>
+      <li><strong>WEBP</strong> : Format moderne offrant une meilleure compression que JPG et PNG, tout en supportant animation et transparence.</li>
+      <li><strong>SVG</strong> : Utilisé pour les logos, icônes et textes nécessitant un redimensionnement sans perte de qualité.</li>
+    </ul>
+
+    <h4>Inclure des images dans une page web</h4>
+    <p>Pour inclure une image sur une page web, on utilise la balise <code>&lt;img&gt;</code> :</p>
+
+<pre><code class="image">&lt;img src="temple.jpg" alt="Photo du temple"&gt;
+&lt;img src="notre-processus.png" alt="Schéma décrivant le processus de l’entreprise"&gt;
+&lt;img src="logo.svg" alt="Logo de l’entreprise"&gt;
+</code></pre>
+
+    <p>L’attribut <code>alt</code> est très important car il décrit l’image si elle ne s’affiche pas, aide au référencement et est utilisé par les lecteurs d’écran.</p>
+
+    <h4>Optimisation des images</h4>
+    <p>Il est essentiel d’optimiser les images pour améliorer l’expérience utilisateur.  
+    Des images trop grandes ralentissent le chargement et consomment plus de données.</p>
+
+    
+
+    <h4>Trois étapes de base de l’optimisation</h4>
+    <ol>
+      <li><strong>Recadrer</strong> l’image pour garder la partie importante.</li>
+      <li><strong>Redimensionner</strong> l’image à la taille maximale réellement nécessaire.</li>
+      <li><strong>Réduire la qualité</strong> à un niveau acceptable pour alléger le fichier.</li>
+    </ol>
+
+    <div class="callout info">
+      <p>Optimiser ses images est un moyen simple et rapide d’améliorer les performances d’une page.</p>
+    </div>
+
+    <div class="callout warning">
+      <p>Dans ce cours, toutes les images doivent être optimisées et faire moins de <strong>100kB</strong>.</p>
+    </div>
+
+    <h3>Instructions de l’activité</h3>
+    <ol>
+      <li>Trouvez le fichier <strong>temple-large.jpeg</strong> dans le dossier <strong>images</strong>.</li>
+      <li>Ouvrez <a href="https://squoosh.app/" target="_blank">Squoosh.app</a>.</li>
+      <li>Redimensionnez l’image à 800 pixels de large.</li>
+      <li>Réduisez sa taille jusqu’à moins de 100kB.</li>
+      <li>Enregistrez-la sous <strong>temple-small</strong> dans le dossier <strong>images</strong>.</li>
+    </ol>
+
+    <h4>Mettre à jour le fichier HTML</h4>
+    <ol>
+      <li>Ouvrez le fichier <strong>images.html</strong>.</li>
+      <li>Modifiez la balise <code>&lt;img&gt;</code> pour afficher votre nouvelle image.</li>
+      <li>Rechargez la page et comparez avec l’image originale.</li>
+    </ol>
+
+    <h3>Soumission</h3>
+    <p>Rien à soumettre pour l’instant. Vous rapporterez vos progrès à la fin de la semaine.</p>
+
+    <hr>
+    <nav>
+      <span><a href="prepare-files-folders.html">Suivant : Travailler avec les fichiers et dossiers</a></span>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; WebAcademy | Tous droits réservés</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="../scripts/prevent-code-select.js"></script>
+</body>
+
+</html>

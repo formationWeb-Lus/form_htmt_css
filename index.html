@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Apprenez les bases du HTML, y compris sa structure, ses éléments et ses attributs. Cette introduction couvre les concepts essentiels du HTML et fournit des ressources pour aller plus loin.">
+  <title>WDD 130 | Introduction au HTML</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://webacademy.github.io/cse-ww-program/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://webacademy.github.io/cse-ww-program/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="https://webacademy.github.io/cse-ww-program/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/course.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/vs2015.min.css">
+  <script src="https://js-cdn.dynatrace.com/jstag/16294a69b33/bf29241ovs/692a19d31f48cd0e_complete.js"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="page">
+      <h1>creaweb 150<span id="coursetitle">: Fondamentaux du Web</span></h1>
+      <img src="/images/logo.png" alt="WebAcademy logo" class="logo">
+    </div>
+  </header>
+
+  <main class="page">
+    <nav>
+      <span><a href="../">Accueil</a></span>
+      <span class="active"><a href="../week01/">S1</a></span>
+      <span><a href="../week02/">S2</a></span>
+      <span><a href="../week03/">S3</a></span>
+      <span><a href="../week04/">S4</a></span>
+      <span><a href="../week05/">S5</a></span>
+      <span><a href="../week06/">S6</a></span>
+      <span><a href="../week07/">S7</a></span>
+    </nav>
+
+    <h2>S01 Activité d’apprentissage : Introduction au HTML</h2>
+    <h3>Aperçu</h3>
+    <p>Chaque fois que vous visitez une page web dans votre navigateur, votre ordinateur envoie une requête à un serveur sur Internet. 
+      Le serveur répond en renvoyant un fichier que votre ordinateur interprète et affiche dans le navigateur. 
+      Le fichier le plus courant est le HTML, qui permet de structurer l’information afin qu’elle soit correctement affichée.</p>
+
+    <figure>
+      <img src="images/serveur.png" alt="Diagramme du cycle requête-réponse">
+      <figcaption>L’utilisateur demande une page web au serveur, qui répond avec un document, généralement en HTML.</figcaption>
+    </figure>
+
+    <p>HTML signifie <strong>HyperText Markup Language</strong> (langage de balisage hypertexte) et fait partie des trois technologies de base du Web : HTML, CSS et JavaScript. 
+      Dans ce cours, vous apprendrez les fondamentaux du HTML et du CSS afin de créer des sites web efficaces et professionnels.</p>
+
+    <p>Le HTML définit la <strong>structure</strong> et le <strong>sens</strong> d’un document web. 
+      L’hypertexte fait référence aux liens hypertextes qui permettent de naviguer d’une page à l’autre. 
+      Le balisage est un ensemble de symboles ou de codes permettant d’afficher du contenu sur Internet. 
+      Les navigateurs web, comme Google Chrome, utilisent le HTML pour rendre les pages visibles.</p>
+
+    <h3>Préparer</h3>
+    <p>Regardez les vidéos suivantes pour en savoir plus sur le HTML :</p>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/jxYtjiuPfLQ" title="Vidéo YouTube"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>Lien : ▶️ <a href="https://www.youtube.com/embed/jxYtjiuPfLQ" target="_blank">Qu’est-ce que le HTML ?</a> &ndash; <span
+          class="smaller">[ 3:25 minutes, 📄 <a href="../text/what_is_html.pdf" target="_blank"
+            rel="noopener">Transcription</a>]</span></p>
+    </div>
+
+    <!-- Section HTML Essentiel ajoutée après la partie Préparer -->
+<h3>Concepts essentiels du HTML</h3>
+<p>Voici un exemple simple d’une page HTML :</p>
+
+<pre><code class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Mes choses préférées&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Mes choses préférées&lt;/h1&gt;
+    &lt;p&gt;Voici une liste de certaines de mes choses préférées.&lt;/p&gt;
+    &lt;p&gt;J'aime ma famille et le temple. Voici quelques photos :&lt;/p&gt;
+
+    &lt;img src="images/family.jpg" alt="Ma famille"&gt;
+    &lt;img src="images/salt-lake-temple.jpg" alt="Le temple de Salt Lake"&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Comme vous pouvez le voir, une page web se compose d’un élément <code>html</code> contenant deux sections principales : <code>head</code> et <code>body</code>. L’élément <code>head</code> contient des informations importantes pour le navigateur, tandis que <code>body</code> contient tout le contenu visible par l’utilisateur.</p>
+
+<h4>Section Head</h4>
+<ul>
+  <li><code>&lt;meta charset="utf-8"&gt;</code> : définit l’encodage des caractères.</li>
+  <li><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code> : permet un rendu correct sur tous les appareils.</li>
+  <li><code>&lt;title&gt;...&lt;/title&gt;</code> : définit le titre affiché dans l’onglet du navigateur.</li>
+</ul>
+
+<h4>Section Body</h4>
+<ul>
+  <li><code>&lt;h1&gt; ... &lt;/h1&gt;</code> : titre principal de la page.</li>
+  <li><code>&lt;p&gt; ... &lt;/p&gt;</code> : paragraphe de texte.</li>
+  <li><code>&lt;img src="..." alt="..."&gt;</code> : insertion d’une image avec un texte alternatif.</li>
+</ul>
+
+<h4>Exercice pratique</h4>
+<p>Essayez d’ajouter :</p>
+<ul>
+  <li>Votre couleur préférée dans un paragraphe.</li>
+  <li>Un nouveau paragraphe avec le texte : <strong>J’apprends le développement Web !</strong></li>
+</ul>
+
+
+    <!-- Le reste du contenu reste identique mais traduit, 
+         et toutes les références "BYU / BYUI" sont changées en "WebAcademy". -->
+
+    <h3>Soumission</h3>
+    <p>Vous n’avez rien à soumettre pour cette activité d’apprentissage. Une fois toutes les activités de la semaine terminées, 
+      vous pourrez revenir sur la plateforme pour signaler vos progrès.</p>
+
+    <hr>
+    <nav>
+      <span><a href="prepare-images.html">Suivant : Travailler avec les images Web</a></span>
+    </nav>
+
+  </main>
+  <footer>
+    <p>Copyright &copy; WebAcademy | Tous droits réservés</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script src="../scripts/prevent-code-select.js"></script>
+</body>
+
+</html>
