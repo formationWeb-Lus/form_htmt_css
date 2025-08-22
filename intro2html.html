@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini cours HTML & CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1, h2, h3, h4, h5 {
+      color: #ff6600;
+      margin-top: 30px;
+    }
+
+    .exemple {
+      background: #fff;
+      border-left: 5px solid #ff6600;
+      padding: 10px 15px;
+      margin: 15px 0;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+
+    .explication {
+      background: #eef;
+      border: 1px solid #ccd;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    a {
+      color: #ff6600;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Mini-cours : Bases du HTML et CSS</h1>
+
+  <p>Cette page présente quelques balises HTML de base, avec explications simples pour débutants.</p>
+
+  <!-- TITRES -->
+  <h2>Les balises de titre &lt;h1&gt; à &lt;h5&gt;</h2>
+
+  <div class="exemple">
+    &lt;h1&gt;Titre principal&lt;/h1&gt;<br>
+    &lt;h2&gt;Sous-titre&lt;/h2&gt;<br>
+    &lt;h3&gt;Titre de section&lt;/h3&gt;<br>
+    &lt;h4&gt;Titre plus petit&lt;/h4&gt;<br>
+    &lt;h5&gt;Titre encore plus petit&lt;/h5&gt;
+  </div>
+
+  <div class="explication">
+    - <strong>&lt;h1&gt;</strong> : Le titre le plus important d'une page.  
+    - <strong>&lt;h2&gt;</strong> : Sous-titre, généralement utilisé pour les grandes sections.  
+    - <strong>&lt;h3&gt;</strong> : Pour les sous-sections d’un &lt;h2&gt;.  
+    - <strong>&lt;h4&gt;</strong> : Encore plus petit, pour détailler davantage.  
+    - <strong>&lt;h5&gt;</strong> : Un titre encore moins important, rarement utilisé.  
+    <br><br>
+    ⚠️ <em>Il est conseillé d’utiliser les titres dans l’ordre hiérarchique (h1, puis h2, etc.), pour que la page soit bien structurée.</em>
+  </div>
+
+  <!-- PARAGRAPHE AVEC LIEN -->
+  <h2>Le paragraphe avec un lien hypertexte</h2>
+
+  <div class="exemple">
+    &lt;p&gt;Un paragraphe contenant un lien vers  
+    &lt;a href="https://www.webacademy.com"&gt;WebAcademy&lt;/a&gt;.&lt;/p&gt;
+  </div>
+
+  <div class="explication">
+    - <strong>&lt;p&gt;</strong> : Balise d’ouverture d’un paragraphe.  
+    - <strong>&lt;/p&gt;</strong> : Balise de fermeture du paragraphe.  
+    - <strong>&lt;a&gt;</strong> : Balise de lien (ancre).  
+    - <strong>href</strong> : Attribut qui indique l’adresse du lien.  
+    - <strong>Contenu du paragraphe</strong> : Le texte affiché à l’écran.  
+    <br><br>
+    Exemple affiché :  
+    <p>Un paragraphe contenant un lien vers <a href="https://www.webacademy.com">WebAcademy</a>.</p>
+  </div>
+</body>
+</html>
