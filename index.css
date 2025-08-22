@@ -1,0 +1,143 @@
+/* =========================
+   Styles WebAcademy - course.css
+   ========================= */
+
+/* Police générale */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #ff7a00; /* orange thème WebAcademy */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header .logo {
+  width: 120px;
+  margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav span {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff7a00;
+}
+
+nav .active a {
+  color: #ff7a00;
+  border-bottom: 2px solid #ff7a00;
+  padding-bottom: 3px;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2, h3, h4, h5 {
+  color: #ff7a00;
+  margin-top: 30px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Figures */
+figure {
+  text-align: center;
+  margin: 20px auto;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Vidéos */
+.video-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Listes */
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Code */
+pre {
+  background: #222;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+code {
+  background: #eee;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
