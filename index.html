@@ -13,13 +13,152 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="index.cs">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/vs2015.min.css">
   <script src="https://js-cdn.dynatrace.com/jstag/16294a69b33/bf29241ovs/692a19d31f48cd0e_complete.js"
     crossorigin="anonymous"></script>
 </head>
 
 <body>
+   <style>
+    body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #ff7a00; /* orange thème WebAcademy */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header .logo {
+  width: 120px;
+  margin-top: 10px;
+}
+
+/* Navigation */
+nav {
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav span {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff7a00;
+}
+
+nav .active a {
+  color: #ff7a00;
+  border-bottom: 2px solid #ff7a00;
+  padding-bottom: 3px;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2, h3, h4, h5 {
+  color: #ff7a00;
+  margin-top: 30px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* Figures */
+figure {
+  text-align: center;
+  margin: 20px auto;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+figcaption {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Vidéos */
+.video-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Listes */
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Code */
+pre {
+  background: #222;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+code {
+  background: #eee;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-family: Consolas, monospace;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+  </style>
   <header>
     <div class="page">
       <h1>creaweb 150<span id="coursetitle">: Fondamentaux du Web</span></h1>
@@ -58,16 +197,6 @@
       Le balisage est un ensemble de symboles ou de codes permettant d’afficher du contenu sur Internet. 
       Les navigateurs web, comme Google Chrome, utilisent le HTML pour rendre les pages visibles.</p>
 
-    <h3>Préparer</h3>
-    <p>Regardez les vidéos suivantes pour en savoir plus sur le HTML :</p>
-    <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/jxYtjiuPfLQ" title="Vidéo YouTube"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p>Lien : ▶️ <a href="https://www.youtube.com/embed/jxYtjiuPfLQ" target="_blank">Qu’est-ce que le HTML ?</a> &ndash; <span
-          class="smaller">[ 3:25 minutes, 📄 <a href="../text/what_is_html.pdf" target="_blank"
-            rel="noopener">Transcription</a>]</span></p>
-    </div>
 
     <!-- Section HTML Essentiel ajoutée après la partie Préparer -->
 <h3>Concepts essentiels du HTML</h3>
