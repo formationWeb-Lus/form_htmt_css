@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 130 | Conventions de nommage des fichiers et dossiers</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="https://webacademy-cse.github.io/cse-ww-program/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="https://webacademy-cse.github.io/cse-ww-program/favicon-32x32.png">
+  <link rel="icon" type="image/png" href="https://webacademy-cse.github.io/cse-ww-program/favicon-16x16.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/course.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/vs2015.min.css">
+  <script src="https://js-cdn.dynatrace.com/jstag/16294a69b33/bf29241ovs/692a19d31f48cd0e_complete.js"
+    crossorigin="anonymous"></script>
+
+     <style>
+    /* Style général */
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8f8f8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    header {
+      background-color: #ff6600;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    header .logo {
+      height: 50px;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #333;
+      margin-bottom: 20px;
+      padding: 10px 0;
+    }
+
+    nav span {
+      margin: 0 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+
+    nav a:hover,
+    nav .active a {
+      background-color: #ff6600;
+      color: #fff;
+    }
+
+    h2 {
+      color: #ff6600;
+      margin-top: 0;
+    }
+
+    h3, h4, h5 {
+      color: #333;
+      margin-top: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    code {
+      background-color: #0997d4;
+      padding: 2px 5px;
+      border-radius: 3px;
+      font-family: monospace;
+      font-size: 0.95em;
+    }
+
+    pre {
+      background-color: #222;
+      color: #f8f8f8;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    .callout {
+      border-left: 5px solid;
+      padding: 10px 15px;
+      margin: 15px 0;
+      border-radius: 4px;
+    }
+
+    .callout.info {
+      border-color: #007bff;
+      background-color: #f5f1f1;
+    }
+
+    .callout.warning {
+      border-color: #ff6600;
+      background-color: #fff4e5;
+    }
+
+    .callout.reference {
+      background-color: #f5f2f2;
+      padding: 5px 10px;
+      margin-top: 5px;
+      border-left: 3px solid #f8f5f5;
+    }
+
+    figure {
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    figure img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #f4f1f1;
+      border-radius: 5px;
+    }
+
+    figure figcaption {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 5px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+      }
+
+      nav span {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="page">
+      <h1>WDD 130<span id="coursetitle"> : Fondamentaux du Web</span></h1>
+      <img src="/images/logo.png" alt="Logo WebAcademy" class="logo">
+    </div>
+  </header>
+
+  <main class="page">
+    <nav>
+      <span><a href="../">Accueil</a></span>
+      <span class="active"><a href="../week01/">S1</a></span>
+      <span><a href="../week02/">S2</a></span>
+      <span><a href="../week03/">S3</a></span>
+      <span><a href="../week04/">S4</a></span>
+      <span><a href="../week05/">S5</a></span>
+      <span><a href="../week06/">S6</a></span>
+      <span><a href="../week07/">S7</a></span>
+    </nav>
+
+    <h2>Activité S01 : Travailler avec les fichiers et dossiers</h2>
+
+    <h3>Présentation</h3>
+    <p>Il est essentiel pour les développeurs de logiciels de comprendre en profondeur les fichiers, dossiers et chemins
+      d'accès. Dans ce cours, vous utiliserez de nombreux fichiers pour créer un site Web unique. Il est important de
+      maîtriser leur utilisation et de connaître leurs relations.</p>
+
+    <p>Cette activité permettra de revoir les notions essentielles des chemins de fichiers et de définir les conventions
+      de nommage que vous devrez suivre pour ce cours.</p>
+
+    <h4>Notions essentielles sur les chemins de fichiers</h4>
+    <p>Un chemin de fichier indique comment localiser un fichier dans un système de fichiers. Votre site Web utilise ces
+      chemins pour lier des fichiers tels que les images et les feuilles de style. Si un fichier lié, comme une image, ne
+      s'affiche pas localement ou lors de la publication sur GitHub Pages, vérifiez le fichier et le chemin.</p>
+
+    <div class="callout info">
+      <p>
+        Les termes <strong>répertoire</strong> et <strong>dossier</strong> ont essentiellement la même signification.
+        Vous verrez les deux termes utilisés dans les cours WDD et dans l'industrie.
+      </p>
+    </div>
+
+    <h4>Exemples courants de chemins de fichiers</h4>
+
+    <h5>Chemins absolus</h5>
+    <p>Un chemin absolu donne le chemin complet vers un fichier et est utilisé pour les ressources externes. Il doit
+      commencer par le protocole, comme <code>https://</code>. Les chemins absolus sont identiques, quel que soit
+      l'emplacement du fichier source.</p>
+
+    <p>Exemple :</p>
+    <pre><code class="html">&lt;img src="https://resource.thesite.com/images/breakfast.svg" alt="Exemple de petit-déjeuner"&gt;</code></pre>
+
+    <h5>Chemins relatifs</h5>
+    <p>Un chemin relatif indique comment trouver un fichier <em>par rapport</em> au fichier source. Il peut se trouver dans
+      le même dossier, un dossier parent ou un sous-dossier.</p>
+
+    <p>Pour un fichier dans le même dossier : <code>autre.html</code> ou <code>./autre.html</code>. Pour un fichier dans
+      le dossier parent : <code>../autre.html</code>. Pour un fichier dans deux sous-dossiers : <code><dossier1>
+      <dossier2>
+      <autres></autres>.html</code>.</p>
+
+    <h5>Chemin relatif : fichier dans le même dossier</h5>
+    <p>Exemple : <strong>apropos-de-nous.html</strong> dans le même dossier que le fichier HTML source.</p>
+    <pre><code class="html">&lt;a href="apropos-de-nous.html"&gt;À propos&lt;a&gt;</code></pre>
+
+    <h5>Chemin relatif : fichier dans un sous-dossier</h5>
+    <p>Exemple : image <strong>profile.png</strong> dans le sous-dossier <strong>images</strong>.</p>
+    <pre><code class="html">&lt;img src="images/profile.png" alt="Xavier Rodriguez" width="100" height="200"&gt;</code></pre>
+
+    <h5>Chemin relatif : fichier dans un dossier parent</h5>
+    <p>Exemple : fichier dans <strong>semaine2</strong> qui référence <strong>castle.jpg</strong> dans le dossier <strong>images</strong> à la racine.</p>
+    <pre><code class="html">&lt;img src="../images/castle.jpg" alt="Château en Allemagne" width="300"&gt;</code></pre>
+
+    <h4>Résumé des chemins</h4>
+    <ul>
+      <li><code>/</code> : commencer depuis le dossier racine</li>
+      <li><code>../</code> : remonter d’un dossier</li>
+      <li><code>../../</code> : remonter de deux dossiers</li>
+      <li><code>./</code> : commencer dans le dossier courant</li>
+      <li>Pour descendre dans un sous-dossier, indiquer le nom du sous-dossier suivi de <code>/</code></li>
+    </ul>
+
+    <h4>Normes de nommage des fichiers et dossiers</h4>
+    <p>Pour garantir un travail cohérent et gérable, il est recommandé de suivre des <strong>conventions de nommage</strong>.</p>
+
+    <h5>Règles de nommage</h5>
+    <ul class="check">
+      <li>Tous les noms en <strong>minuscules</strong></li>
+      <li>Pas d'espaces, utiliser des <strong>tirets</strong> <code>-</code></li>
+      <li>Pas de caractères spéciaux</li>
+      <li>Noms courts et significatifs (sémantiques)</li>
+      <li>Dossiers standards : <strong>styles</strong> pour CSS, <strong>images</strong> pour les images</li>
+    </ul>
+
+    <h3>Instructions pour l'activité</h3>
+    <h4>Vérification des conventions</h4>
+    <p>Vérifiez chaque fichier et dossier pour voir s'ils respectent les conventions de nommage :</p>
+    <ol>
+      <li><code>Apropos.html</code> → ❌ Doit être <code>about.html</code></li>
+      <li><code>info d'entreprise.html</code> → ❌ Doit être <code>info-d'entreprise.html</code></li>
+      <li><code>catalogue-deproduits.jpg</code> → ✅ Correct</li>
+      <li><code>rendezvous_detrain.html</code> → ❌ Doit être <code>rendezvous-detain.html</code></li>
+      <li><code>produit4.png</code> → ✅ Correct</li>
+      <li><code>temple-large (copy).webp</code> → ❌ Doit être <code>temple-large-copy.webp</code></li>
+    </ol>
+
+    <h4>Exercice sur les chemins de fichiers</h4>
+    <p>Vous devez compléter les chemins des images dans le fichier HTML pour les afficher correctement.</p>
+
+    <h3>Soumission</h3>
+    <p>Aucune soumission nécessaire pour cette activité. Posez vos questions dans le forum S01 sur Microsoft Teams.</p>
+
+    <hr>
+    <nav>
+      <span><a href="prepare-git-pushing.html">Suivant : Publier vos pages sur GitHub</a></span>
+    </nav>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; WebAcademy | Tous droits réserv
+és</p>
+</footer>
+</body>
+</html>
