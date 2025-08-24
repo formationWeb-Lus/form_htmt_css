@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cours HTML | Travailler avec les images</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ff6600;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header img {
+      max-height: 60px;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 1rem 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background: #ff6600;
+      color: #fff;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #ff6600;
+      margin-top: 20px;
+    }
+
+    h3 {
+      color: #333;
+      margin-top: 15px;
+    }
+
+    h4 {
+      margin-top: 10px;
+      color: #555;
+    }
+
+    ul, ol {
+      padding-left: 20px;
+    }
+
+    pre {
+      background: #222;
+      color: #f1f1f1;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background: #222;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="page">
+      <h1>WebAcademy<span>: Fondamentaux du Web</span></h1>
+      <img src="../images/logo.png" alt="Logo WebAcademy" class="logo">
+    </div>
+  </header>
+
+  <main class="page">
+    <nav>
+      <span><a href="../">Accueil</a></span>
+      <span class="active"><a href="../semaine01/">S1</a></span>
+      <span><a href="../semaine02/">S2</a></span>
+      <span><a href="../semaine03/">S3</a></span>
+      <span><a href="../semaine04/">S4</a></span>
+      <span><a href="../semaine05/">S5</a></span>
+    </nav>
+
+    <h2>Semaine 01 : Activité - Travailler avec les images sur le Web</h2>
+    <h3>Présentation</h3>
+    <p>La plupart des sites web contiennent non seulement du texte, mais aussi des images. Certains formats d’images 
+      sont plus adaptés au web que d’autres. Cette activité introduit l’utilisation d’images pour le web et explique 
+      comment les optimiser afin qu’elles soient plus légères et que les pages se chargent plus rapidement.</p>
+
+    <h3>Préparer</h3>
+
+    <h4>Types d’images</h4>
+    <p>Les formats d’images les plus courants sur le web sont :</p>
+    <ul>
+      <li><strong>JPEG / JPG</strong> : idéal pour les photos et images complexes. Compression avec perte, mais taille réduite.</li>
+      <li><strong>PNG</strong> : utilisé pour les graphiques, logos et images avec fond transparent. Compression sans perte.</li>
+      <li><strong>GIF</strong> : pour de petites animations et graphiques simples. Limité à 256 couleurs.</li>
+      <li><strong>WEBP</strong> : format moderne, compression efficace, supporte transparence et animation.</li>
+      <li><strong>SVG</strong> : parfait pour les logos, icônes et textes qui doivent rester nets en toutes tailles.</li>
+    </ul>
+
+    <h4>Inclure des images dans une page</h4>
+    <p>Exemples d’utilisation de la balise <code>&lt;img&gt;</code> :</p>
+
+    <pre><code>&lt;img src="temple.jpg" alt="Photo du temple"&gt;
+&lt;img src="processus.png" alt="Schéma du processus de l’entreprise"&gt;
+&lt;img src="logo.svg" alt="Logo de l’entreprise"&gt;
+</code></pre>
+
+    <p>L’attribut <code>alt</code> est essentiel : il décrit l’image si elle ne s’affiche pas, aide les moteurs de recherche 
+      et améliore l’accessibilité pour les personnes utilisant des lecteurs d’écran.</p>
+
+    <h4>Optimisation des images</h4>
+    <p>Les images trop lourdes ralentissent le chargement d’une page. Il est donc important de réduire leur taille 
+      sans perdre en qualité visuelle.</p>
+
+    <h4>Trois étapes de base pour optimiser une image</h4>
+    <ol>
+      <li><strong>Recadrer</strong> l’image pour ne garder que l’essentiel.</li>
+      <li><strong>Redimensionner</strong> à la taille nécessaire pour la mise en page.</li>
+      <li><strong>Réduire la qualité</strong> jusqu’à obtenir une taille de fichier acceptable.</li>
+    </ol>
+
+    <h3>Instructions de l’activité</h3>
+    <p>Dans cette activité, vous allez optimiser une image trop lourde puis l’intégrer dans une page web.</p>
+
+    <h4>Étapes :</h4>
+    <ol>
+      <li>Ouvrir votre dossier de projet dans VS Code.</li>
+      <li>Importer une image trop grande dans le dossier <strong>images</strong>.</li>
+      <li>Utiliser un outil gratuit en ligne comme <a href="https://squoosh.app" target="_blank">Squoosh.app</a> 
+          pour la compresser.</li>
+      <li>Enregistrer l’image optimisée dans le même dossier.</li>
+      <li>Mettre à jour le code HTML avec la nouvelle version plus légère.</li>
+    </ol>
+
+    <h3>À retenir</h3>
+    <p>Optimiser ses images est une bonne pratique indispensable : cela rend vos pages plus rapides, plus accessibles 
+      et agréables à utiliser.</p>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; WebAcademy | Tous droits réservés</p>
+  </footer>
+</body>
+
+</html>

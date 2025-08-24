@@ -11,7 +11,129 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles/course.css">
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0066cc;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header img {
+      max-height: 60px;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 1rem 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav .active a {
+      background: #0066cc;
+      color: #fff;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #0066cc;
+      margin-top: 20px;
+    }
+
+    h3 {
+      color: #444;
+      margin-top: 15px;
+    }
+
+    h4 {
+      margin-top: 10px;
+      color: #555;
+    }
+
+    ul,
+    ol {
+      padding-left: 20px;
+    }
+
+    pre {
+      background: #222;
+      color: #f1f1f1;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+
+    .callout {
+      padding: 15px;
+      margin: 15px 0;
+      border-left: 6px solid;
+      border-radius: 5px;
+    }
+
+    .callout.info {
+      background: #e6f0ff;
+      border-color: #0066cc;
+      color: #003366;
+    }
+
+    .callout.warning {
+      background: #fff3e6;
+      border-color: #ff6600;
+      color: #663300;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background: #222;
+      color: #fff;
+    }
+
+    hr {
+      margin: 2rem 0;
+      border: none;
+      height: 1px;
+      background: #ddd;
+    }
+  </style>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/vs2015.min.css">
 </head>
 
@@ -45,24 +167,20 @@
     <h3>Préparation</h3>
 
     <h4>Types d’images</h4>
-    <p>La vidéo suivante présente les types d’images les plus utilisés sur le web :</p>
-
-    
-
-    <p>Comme expliqué dans la vidéo, les types d’images les plus courants pour le web sont :</p>
+    <p>Comme expliqué, les types d’images les plus courants pour le web sont :</p>
 
     <ul>
-      <li><strong>JPEG / JPG</strong> : Utilisé pour les photos et images complexes. Compression avec perte pour réduire fortement la taille du fichier.</li>
-      <li><strong>PNG</strong> : Utilisé pour les graphiques, logos et images nécessitant un fond transparent. Compression sans perte et support de la transparence alpha.</li>
-      <li><strong>GIF</strong> : Utilisé pour les petites animations et graphiques simples. Limité à 256 couleurs, mais prend en charge la transparence de base et les animations.</li>
-      <li><strong>WEBP</strong> : Format moderne offrant une meilleure compression que JPG et PNG, tout en supportant animation et transparence.</li>
-      <li><strong>SVG</strong> : Utilisé pour les logos, icônes et textes nécessitant un redimensionnement sans perte de qualité.</li>
+      <li><strong>JPEG / JPG</strong> : Utilisé pour les photos et images complexes.</li>
+      <li><strong>PNG</strong> : Utilisé pour les graphiques, logos et images nécessitant un fond transparent.</li>
+      <li><strong>GIF</strong> : Pour les petites animations et graphiques simples.</li>
+      <li><strong>WEBP</strong> : Format moderne avec compression efficace.</li>
+      <li><strong>SVG</strong> : Idéal pour logos et icônes redimensionnables.</li>
     </ul>
 
     <h4>Inclure des images dans une page web</h4>
-    <p>Pour inclure une image sur une page web, on utilise la balise <code>&lt;img&gt;</code> :</p>
+    <p>Exemple d’utilisation de la balise <code>&lt;img&gt;</code> :</p>
 
-<pre><code class="image">&lt;img src="temple.jpg" alt="Photo du temple"&gt;
+    <pre><code class="image">&lt;img src="temple.jpg" alt="Photo du temple"&gt;
 &lt;img src="notre-processus.png" alt="Schéma décrivant le processus de l’entreprise"&gt;
 &lt;img src="logo.svg" alt="Logo de l’entreprise"&gt;
 </code></pre>
@@ -71,9 +189,7 @@
 
     <h4>Optimisation des images</h4>
     <p>Il est essentiel d’optimiser les images pour améliorer l’expérience utilisateur.  
-    Des images trop grandes ralentissent le chargement et consomment plus de données.</p>
-
-    
+      Des images trop grandes ralentissent le chargement et consomment plus de données.</p>
 
     <h4>Trois étapes de base de l’optimisation</h4>
     <ol>
@@ -121,7 +237,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
-  <script src="../scripts/prevent-code-select.js"></script>
 </body>
 
 </html>
